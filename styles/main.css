@@ -1,0 +1,73 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+body {
+  background: #faf1f2;
+  font-size: 16px;
+}
+
+.y-font {
+  font-family: 'Great Vibes', cursive;
+}
+
+.text-cursive {
+  font-family: "Cookie", cursive;
+}
+
+.content {
+  font-family: 'Nunito', sans-serif;
+}
+
+.p-text {
+  color: #895f5a;
+}
+
+.banner {
+  /*max-height: 40vh;*/
+  height: 30vh;
+  width: 100%;
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  background-color: #faf1f2;
+}
+
+.jumbotron video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*  object-fit is not supported on IE  */
+  /*object-fit: cover;*/
+  object-fit: contain;
+}
+
+.jumbotron .container {
+  position: relative;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+/*#video-background { 
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  
+  width:100%;
+}*/
+/*.jumbotron {
+  color: white;
+  background-image: url("http://perros365.com/wp-content/uploads/2014/01/shiba01opti-1155x700.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh !important;
+}*/
