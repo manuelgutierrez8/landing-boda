@@ -4,19 +4,21 @@
  */
 body {
   background: #faf1f2;
+  color: #000;
   font-size: 18px !important;
 }
 
 .y-font {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
 }
 
 .text-cursive {
-  font-family: "Cookie", cursive;
+  /*font-family: "Cookie", cursive;*/
+  font-family: "Great Vibes", cursive;
 }
 
 .content {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .p-text {
@@ -51,6 +53,79 @@ body {
 
 .title {
   font-size: 5rem;
+}
+
+.title-secondary {
+  font-size: 3rem;
+}
+
+.separator {
+  background: #895f5a;
+  background: -moz-linear-gradient(
+    left,
+    #895f5a 0%,
+    rgba(255, 255, 255, 1) 50%,
+    #895f5a 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, #895f5a),
+    color-stop(50%, rgba(255, 255, 255, 1)),
+    color-stop(100%, #895f5a)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #895f5a 0%,
+    rgba(255, 255, 255, 1) 50%,
+    #895f5a 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    #895f5a 0%,
+    rgba(255, 255, 255, 1) 50%,
+    #895f5a 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    #895f5a 0%,
+    rgba(255, 255, 255, 1) 50%,
+    #895f5a 100%
+  );
+  background: linear-gradient(
+    to right,
+    #895f5a 0%,
+    rgba(255, 255, 255, 1) 50%,
+    #895f5a 100%
+  );
+
+  height: 2px;
+  margin: auto;
+  width: 80%;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #895f5a;
+  position: relative;
+}
+
+.center-me {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-confirm {
+  border: 1px solid #895f5a;
+  border-radius: 10px;
+}
+
+.button-text {
+  font-size: 1rem;
 }
 
 /*#video-background { 
