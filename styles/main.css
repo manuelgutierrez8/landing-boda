@@ -122,6 +122,7 @@ body {
 .btn-confirm {
   border: 1px solid #895f5a;
   border-radius: 10px;
+  width: 200px;
 }
 
 .button-text {
