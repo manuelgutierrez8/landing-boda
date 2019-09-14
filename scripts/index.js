@@ -24,8 +24,9 @@ function getDictionary() {
       "event": "Recepción", 
       "event-place": "Casa & jardín Eventos - Las Colinas",
       "rsvp": "Por favor RSVP antes del 20 de octubre",
-      "guests": "Invitado(s)",
-      "message": "Lluvia de sobres"
+      "guests": " Invitado(s)",
+      "message": "Lluvia de sobres",
+      "button-text": "Asistiremos"
     },
     "en": {
       "intro": "Request the honor of your presence at the ceremony of their wedding",
@@ -35,8 +36,9 @@ function getDictionary() {
       "event": "Reception", 
       "event-place": "Casa & jardín Eventos - Las Colinas",
       "rsvp": "Kindly RSVP by October 20th.",
-      "guests": "Guest(s)",
-      "message": "Cards Box"
+      "guests": " Guest(s)",
+      "message": "Cards Box",
+      "button-text": "Joyfully Accepts"
     }
   };
 }
