@@ -9,7 +9,7 @@ $(window).on("resize", function() {
 });*/
 
 var lang = "en";
-var redirectPage = "https://www.google.com";
+var redirectPage = "default.html";
 var userData;
 
 $(window).on("load", function() {
@@ -63,29 +63,33 @@ function getDictionary() {
   return {
     es: {
       intro: "Tienen el agrado de invitarle a la celebración de su boda",
-      date: "Viernes 01 de noviembre",
+      date: "01 de noviembre de 2019",
       mass: "Misa",
       "mass-place":
-        "Capilla de nuestra señora del sagrado Colegio Centroamérica",
+        "Capilla Nuestra Señora del Sagrado Corazón  - Colegio Centroamérica",
       event: "Recepción",
-      "event-place": "Casa & jardín Eventos - Las Colinas",
+      "event-place": "Casa & Jardín Eventos - Las Colinas",
       rsvp: "Por favor RSVP antes del 20 de octubre",
-      guests: " Invitado(s)",
+      guests: "Total de invitados: ",
       message: "Lluvia de sobres",
-      "button-text": "Asistiremos"
+      "button-text": "Asistiremos", 
+      "mass-hour": "5:00 PM",      
+      "event-hour": "7:00 PM"
     },
     en: {
       intro:
         "Request the honor of your presence at the ceremony of their wedding",
       date: "November 1st, 2019",
       mass: "Ceremony",
-      "mass-place": "Capel Nuestra Señora del Sagrado Colegio Centroamerica",
+      "mass-place": "Capel Nuestra Señora del Sagrado Corazón - Colegio Centroamerica",
       event: "Reception",
-      "event-place": "Casa & jardín Eventos - Las Colinas",
+      "event-place": "Casa & Jardín Eventos - Las Colinas",
       rsvp: "Kindly RSVP by October 20th.",
-      guests: " Guest(s)",
+      guests: "Total Guests: ",
       message: "Cards Box",
-      "button-text": "Joyfully Accepts"
+      "button-text": "Joyfully Accepts",
+      "mass-hour": "5:00 PM",      
+      "event-hour": "7:00 PM"
     }
   };
 }

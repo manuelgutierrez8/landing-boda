@@ -21,7 +21,7 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.p-text {
+.p-text, .p-link:hover {
   color: #895f5a;
 }
 
