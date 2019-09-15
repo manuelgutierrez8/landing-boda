@@ -54,7 +54,7 @@ function getData(guestId) {
 }
 
 function confirmAssistance() {
-  $(".js-confirm").prop('disabled', true);
+  $(".js-confirm").prop("disabled", true);
 
   let http = new XMLHttpRequest();
   http.onreadystatechange = function() {
@@ -87,7 +87,12 @@ function updateDatabase(database) {
     dataType: "json",
     success: function(data, textStatus, jqXHR) {
       var json = JSON.stringify(data);
-      window.location.href = "thank-you.html";
+      if (userData.language == "es") {
+        window.location.href = "thank-you-es.html";
+      }
+      else {
+        window.location.href = "thank-you-en.html";
+      }
     }
   });
 }
@@ -99,7 +104,7 @@ function setUserInformation() {
   document.querySelector(".js-guests").textContent = userData.guests;
 
   translateForm();
-  if(userData.status == "confirmed") {
+  if (userData.status == "confirmed") {
     document.querySelector(".js-confirmed").classList.remove("d-none");
     document.querySelector(".js-confirmed").classList.add("d-flex");
 
@@ -107,8 +112,9 @@ function setUserInformation() {
     document.querySelector(".js-confirm").classList.add("d-none");
   }
 
-  if(userData.guests == 1 && lang == "es") {
-    document.querySelector('[data-locale-text="button-text"]').textContent = 'Asistiré';
+  if (userData.guests == 1 && lang == "es") {
+    document.querySelector('[data-locale-text="button-text"]').textContent =
+      "Asistiré";
   }
 }
 
@@ -127,7 +133,7 @@ function getDictionary() {
       message: "Lluvia de sobres",
       "button-text": "Asistiremos",
       "mass-hour": "5:00 PM",
-      "event-hour": "7:00 PM", 
+      "event-hour": "7:00 PM",
       "button-text-confirmed": "Confirmado"
     },
     en: {
@@ -144,7 +150,7 @@ function getDictionary() {
       message: "",
       "button-text": "Joyfully Accepts",
       "mass-hour": "5:00 PM",
-      "event-hour": "7:00 PM", 
+      "event-hour": "7:00 PM",
       "button-text-confirmed": "Confirmed"
     }
   };

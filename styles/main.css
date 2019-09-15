@@ -21,7 +21,8 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.p-text, .p-link:hover {
+.p-text,
+.p-link:hover {
   color: #895f5a;
 }
 
@@ -130,7 +131,7 @@ body {
 }
 
 body.thank-you {
-  background: url('/media/hero-blur.jpg') no-repeat center center fixed;
+  background: url("/media/hero-blur.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -140,9 +141,19 @@ body.thank-you {
 }
 
 .thank-you-text {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
+.title-thank-you {
+  font-size: 3rem!important;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*#video-background { 
   position: fixed;
   top: 0;
