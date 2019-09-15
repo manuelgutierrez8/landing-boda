@@ -1,5 +1,12 @@
 [
   {
+    "id": "mag",
+    "name": "Manuel Gutierrez",
+    "guests": 1,
+    "language": "es",
+    "status": "pending"
+  },
+  {
     "id": "qgy",
     "name": "José Urtecho y Sra.",
     "guests": 2,

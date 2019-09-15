@@ -129,6 +129,20 @@ body {
   font-size: 1rem;
 }
 
+body.thank-you {
+  background: url('/media/hero-blur.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  color: #fff;
+}
+
+.thank-you-text {
+  font-size: 3rem;
+}
+
 /*#video-background { 
   position: fixed;
   top: 0;
