@@ -124,11 +124,17 @@
         </p>
       </div>
       <div class="col-12 text-center my-3 d-flex justify-content-center content">
-        <button class="btn btn-large btn-outline-dark btn-confirm d-flex align-items-center justify-content-around " onclick="confirmAssistance();">
+        <button class="btn btn-large btn-outline-dark btn-confirm js-confirm d-flex align-items-center justify-content-around " onclick="confirmAssistance();">
           <div class="circle p-text">
           <span class="center-me fas fa-heart"></span>    
           </div>
           <span class="button-text" data-locale-text="button-text">&nbsp;</span>
+        </button>
+        <button class="btn btn-large btn-outline-dark btn-confirm js-confirmed d-none align-items-center justify-content-around " disabled="disabled">
+          <div class="circle p-text">
+          <span class="center-me fas fa-check"></span>    
+          </div>
+          <span class="button-text" data-locale-text="button-text-confirmed">&nbsp;</span>
         </button>
       </div>
     </div>
